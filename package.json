@@ -1,0 +1,41 @@
+{
+  "name": "ecommerce-rest-api",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madush99/Ecommerce-Rest-API.git"
+  },
+  "author": "Madusanka,Agasthi,Ushini and Bulner",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^9.0.2",
+    "emailjs-com": "^2.6.4",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.8",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-redux": "^7.2.4",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "concurrently": "^6.1.0"
+  }
+}
